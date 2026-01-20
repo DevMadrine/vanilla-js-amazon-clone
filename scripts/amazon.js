@@ -1,3 +1,5 @@
+import { cart } from "../data/cart.js";
+
 let productHTML =  '';
 
 products.forEach((product) =>{
@@ -40,6 +42,7 @@ products.forEach((product) =>{
   </div>
   `
 });
+
 
 
 
