@@ -6,11 +6,26 @@
   <link rel="stylesheet" href="./styles/amazon.css">
 </head>
 <body>
-  <div class="main">
+  <div class="header">
+    <div class="logo">
+      <img src="./images/amazon-logo-white.png" alt="Amazon Logo">
+    </div>
+    <div class="search-bar">
+      <input class="search" type="text" placeholder="Search ">
+      <button class="search-button"><img src="./images/icons/search-icon.png"></button>
+    </div>
+    <div class="returns-orders"><span class="returns">Returns </span><span class="orders">& Orders</span></div>
+    <div class="cart">
+      <a class="cart-link" href="">
+        <img class="cart-icon" src="./images/icons/cart-icon.png" alt="Cart Icon">
+      <div class="cart-quantity js-cart-quantity">0</div>
+      </a>
+  </div>
+  </div>
+   <div class="main">
     <div class="products-grid js-products-grid">
       <!-- Products will be dynamically inserted here -->
     </div>
-  </div>
 
   <script src="./data/cart.js"></script>
   <script src="./data/products.js"></script>
