@@ -117,3 +117,10 @@ padding: 20px;
   height: 300px;
   width: 350px;
 }
+
+.link-primary{
+  color: #0066c0;
+  font-weight: bold;
+  cursor: pointer;
+  
+}
