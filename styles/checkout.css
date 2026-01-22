@@ -1,0 +1,119 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+.checkout-header{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  margin-left: 80px;
+  margin-top: 50px;
+  margin-right: 80px;
+  height: 200px;
+  width: 100%;
+}
+.logo{
+  height: 200px;
+}
+
+.amazon-logo{
+  width: 200px;
+  height: 80px;
+
+}
+.checkout-title{
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  color:black;
+}
+.item-quantity{
+  color: darkblue;
+}
+
+.checkout-lock{
+  width: 80px;
+  height: 80px;
+ margin-left: 200px;
+}
+.checkout-main{
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+h1{
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.checkout-main{
+  display: grid;
+  width:100%;
+  grid-template-columns: 50% 40%;
+  column-gap: 20px;
+
+}
+
+.checkout-left{
+  /* background-color: red; */
+  padding: 20px;
+  
+}
+
+.review{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.checkout-container{
+  width: 700px;
+  height: 250px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.delivery-image{
+  width: 150px;
+  height: 150px;
+}
+
+.delivery-date{
+  font-size: 18px;
+  font-weight: bold;
+  color: green;
+  padding-left: 10px;
+}
+.shipping-dates{
+  margin-bottom: 10px;
+}
+
+.free{
+ 
+  padding-left: 25px;
+}
+
+
+.checkout-items{
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1.5fr;
+  column-gap: 15px;
+  padding: 10px;
+}
+
+.checkout-right{
+ 
+padding: 20px;
+
+}
+
+.order-summary{
+  border: 2px solid gray;
+  border-radius: 10px;
+  padding: 20px;
+  height: 300px;
+  width: 350px;
+}
