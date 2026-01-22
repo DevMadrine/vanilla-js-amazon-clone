@@ -1,6 +1,6 @@
 export const products = [
   {
-    id: 1,
+    id: "1",
     image: 'images/stocks.jpeg',
     name: 'Men stockings Black and white',
     rating:{
@@ -10,7 +10,7 @@ export const products = [
     price: 1095
   },
     {
-    id: 2,
+    id: "2",
     image: 'images/basketball.jpeg',
     name: 'Intermediate Size Basketball',
     rating:{
@@ -21,7 +21,7 @@ export const products = [
   },
 
     {
-    id: 3,
+    id: "3",
     image: 'images/shirts.jpeg',
     name: 'Men cotton shirts 3 pieces',
     rating:{

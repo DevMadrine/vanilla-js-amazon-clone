@@ -1,4 +1,4 @@
-import { cart, addToCart} from "../data/cart.js"; //imort * as cartModule from '../data/cart.js';
+import { cart, addToCart} from "../data/cart.js"; //import * as cartModule from '../data/cart.js';
 import { products } from "../data/products.js"; 
 import { formatCurrency } from "./utils/money.js";
 
