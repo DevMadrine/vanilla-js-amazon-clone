@@ -110,7 +110,7 @@ padding: 20px;
 
 }
 
-.order-summary{
+.payment-summary{
   border: 2px solid gray;
   border-radius: 10px;
   padding: 20px;
@@ -129,4 +129,45 @@ padding: 20px;
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 10px;
+}
+
+.review{
+  margin-left: 100px;
+  font-size: 24px;
+}
+
+.payment-summary-title{
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.order-button{
+  background-color: #ffd814;
+  border: 1px solid #fcd200;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.payment-summary-row{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.total-row{
+  font-size: 28px;
+  font-weight: bold;
+  border-top: 1px solid gray;
+  padding-top: 10px;
+  color: brown;
+}
+
+.sub-total-row{
+   border-top: 1px solid gray;
 }
