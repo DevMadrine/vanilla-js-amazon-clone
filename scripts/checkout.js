@@ -24,8 +24,10 @@ products.forEach((product) => {
 
 console.log(matchingProduct);
 
+
 const deliveryOptionId = cartItem.deliveryOptionId;
 let deliveryOption;
+
 deliveryOptions.forEach((option) => {
   if(option.id === deliveryOptionId){
     deliveryOption = option;
@@ -35,7 +37,6 @@ deliveryOptions.forEach((option) => {
 const today = dayjs();
 const deliveryDate = today.add(deliveryOption.deliveryDays, 'days');
 const dateString = deliveryDate.format('dddd, MMMM D');
-
 
 cartSummary +=  
 
@@ -61,6 +62,7 @@ cartSummary +=
   </div>
 `;
 });
+
 
 function deliveryOptionsHTML(matchingProduct, cartItem){
 let html = '';
