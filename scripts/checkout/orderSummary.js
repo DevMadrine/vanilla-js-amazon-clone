@@ -28,17 +28,19 @@ const dateString = deliveryDate.format('dddd, MMMM D');
 
 cartSummary +=  
 
-` <div class="checkout-container js-cart-item-container-${matchingProduct.id}">
+` <div class="checkout-container js-cart-item-container js-cart-item-container-${matchingProduct.id}">
     <p class="delivery-date">Delivery date: ${dateString}</p>
     <div class="checkout-items">
       <img class="delivery-image" src="${matchingProduct.image}" alt="">
       <div class="checkout-item-details">
         <p>${matchingProduct.name}</p>
         <p>$${formatCurrency(matchingProduct.price)}</p>
-        <div>
+        <div class="product-quantity js-product-quantity-${matchingProduct.id}">
           <span>Quantity:${cartItem.quantity}</span>
           <span class="update-quantity-link link-primary">Update</span> 
-          <span class="delete-quantity-link link-primary js-order-delete" data-product-id="${matchingProduct.id}">Delete</span>
+          <span class="delete-quantity-link link-primary js-order-delete
+          js-delete-link-${matchingProduct.id}" 
+          data-product-id="${matchingProduct.id}">Delete</span>
         </div>
       </div>
       <div class="delivery-options">
