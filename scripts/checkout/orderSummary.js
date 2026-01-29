@@ -34,7 +34,7 @@ cartSummary +=
       <img class="delivery-image" src="${matchingProduct.image}" alt="">
       <div class="checkout-item-details">
         <p>${matchingProduct.name}</p>
-        <p>$${formatCurrency(matchingProduct.price)}</p>
+        <p>${matchingProduct.getPrice()}</p>
         <div class="product-quantity js-product-quantity-${matchingProduct.id}">
           <span>Quantity:${cartItem.quantity}</span>
           <span class="update-quantity-link link-primary">Update</span> 
