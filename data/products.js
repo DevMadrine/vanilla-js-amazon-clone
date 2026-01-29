@@ -32,26 +32,44 @@ class Product{
   getPrice(){
     return `$${formatCurrency(this.price)}`;
   }
+  extraHTMLInfor(){
+    return '';
+  }
 
 }
 
+class Clothing extends Product{
+sizeChartLink;
+constructor(productDetails){
+super(productDetails);
+this.sizeChartLink = productDetails.sizeChartLink;
+}
 
+extraHTMLInfor(){
+  return `
+  <a href="${this.sizeChartLink}" target="_blank">
+  Size Chart
+  </a>
+  `
+}
+}
 
-const product1 = new Product(
-  {
-    id: "1",
-    image: 'images/stocks.jpeg',
-    name: 'Men stockings Black and white',
+const tshirt = new Clothing(
+   {
+    id: "3",
+    image: 'images/shirts.jpeg',
+    name: 'Men cotton shirts 3 pieces',
     rating:{
-      stars: 4.5,
-      count: 87
+      stars: 3.5,
+      count: 59
     },
-    price: 1095
-  },
+    price: 8709,
+    type: 'clothing',
+
+  }
 );
-console.log(product1);
 
-
+console.log(tshirt);
 export const products = [
   {
     id: "1",
@@ -61,7 +79,8 @@ export const products = [
       stars: 4.5,
       count: 87
     },
-    price: 1095
+    price: 1095,
+
   },
     {
     id: "2",
@@ -71,7 +90,10 @@ export const products = [
       stars: 4.0,
       count: 180
     },
-    price: 1000
+    price: 1000,
+
+   
+
   },
 
     {
@@ -82,13 +104,19 @@ export const products = [
       stars: 3.5,
       count: 59
     },
-    price: 8709
+    price: 8709,
+    sizeChartLink: 'images/basketball.jpeg',
+    type: 'clothing'
+
   }
 
-].map(
-  (productDetails)=>{
-  return new Product(productDetails);
+].map((productDetails) =>{
+  if(productDetails.type === 'clothing'){
+     return new Clothing(productDetails);
   }
-);
+
+  return new Product(productDetails);
+  
+});
 
 console.log(products);
